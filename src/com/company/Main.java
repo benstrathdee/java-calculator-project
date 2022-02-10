@@ -45,11 +45,11 @@ public class Main {
                 System.out.println("Please input your second number.");
                 input2 = scan.nextDouble();
                 result = calculatePower(input1, input2);
-                System.out.printf("The result of %f to the power of %f is %f", input1, input2, result);
+                System.out.printf("The result of %.0f to the power of %.0f is %.0f", input1, input2, result);
                 break;
             case "sqrt":
                 result = Math.sqrt(input1);
-                System.out.printf("The square root of %f is %f", input1, result);
+                System.out.printf("The square root of %.0f is %.0f", input1, result);
                 break;
             default:
                 System.out.println("One or more of your inputs was incompatible.");
@@ -73,6 +73,6 @@ public class Main {
     }
 
     public static void outputBasic(double input1, String operator, double input2, double result) {
-        System.out.printf("The result of %f %s %f is %f", input1, operator, input2, result);
+        System.out.printf("The result of %.0f %s %.0f is %.0f", input1, operator, input2, result);
     }
 }
